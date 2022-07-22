@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./first.css">
+    <title>첫홈페이지</title>
+</head>
+<body>
+
+    <div class="main">
+        
+        <div class="quote">
+            <span></span>
+            <span></span>
+        </div>
+
+        <h1 class="clock"></h1>
+
+        <div class="welcome">
+            <p class="hello">Welcome to my site</p>
+        </div>
+
+        <div class="ID">
+            <form id="login-form" class="hidden">
+                <input required maxlength="5" type="text" id="my_ID" placeholder="Enter your name.">
+                <input type="submit" value="Log In" id="Submit">
+            </form>
+            <h1 id = "greeting" class = "hidden"></h1>
+        </div>
+
+            <form id="todo-form">
+                <input type="text" maxlength="20" placeholder="Write a To Do" required>
+            </form>
+
+            <ul id="todo-list"></ul>
+    </div>
+
+
+    <script src="./자바스크립트/first.js"></script>
+    <script src="./자바스크립트/second.js"></script>
+    <script src="./자바스크립트/quotes.js"></script>
+    <script src="./자바스크립트/todo.js"></script>
+</body>
+</html>
