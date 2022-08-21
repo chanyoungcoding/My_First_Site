@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+
+:root {
+    --color-light-gray:rgb(251, 201, 152);
+    --color-light-blue:#CCEEFF
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    background-color: #0A1B2A;
+}
+
+.main {
+    position: relative;
+    margin: 1% auto;
+    width: 90vw;
+    height: 97vh;
+    background-color: #fff;
+    
+}
+
+/* navbar */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar div i {
+    color: var(--color-light-gray);
+    font-size: 50px;
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.quotes {
+    font-size:15px;
+    font-weight: 600;
+    color: var(--color-light-blue);
+}
+
+.quotes span:last-child {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+}
+.navbar .introduce {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar .introduce p {
+    font-size: larger;
+    font-weight: 400;
+    margin: 0;
+}
+
+.navbar .introduce #line {
+    width: 160px;
+    background-color: #0A1B2A;
+    height: 1px;
+    margin-top: 2px;
+}
+
+/* Font */
+
+.Font {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__font p {
+    color: #CCEEFF;
+    font-size: 50px;
+    font-family: 'DynaPuff', cursive;
+}
+
+.main__font p:first-child {
+    position: relative;
+    margin: 30px 0 3px 0;
+    left: 10%;
+    font-weight: normal ;
+    font-size: 100px;
+}
+
+.main__font p:last-child {
+    position: relative;
+    margin: 1px 0 0 0;
+    left: 70%;
+}
+
+.main__icon {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 200px;
+}
+
+.main__icon i {
+    color: var(--color-light-gray);
+}
+
+/* Name */
+.ID {
+    margin-top: 20px;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id {
+    background-color: var(--color-light-blue);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.id #my_ID {
+    border: none;
+    outline: none;
+    background-color:rgba(255,255,255,0);
+}
+
+#my_ID::-webkit-input-placeholder {
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+input[type="submit"] {
+    background-color: rgba(255,255,255,0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+input[type="submit"]:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+input[type="submit"]:active {
+    background-color: rgba(255,255,255,1.0);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 임시 */
+/* 할일 적기 */
+#todo-form {
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    top: 53%;
+    left: 40%;
+    border-bottom: 3px solid #fff;
+}
+
+#todo-form input {
+    position: absolute;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-white);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color:rgba(0,0,0,0);
+}
+
+#todo-form input::-webkit-input-placeholder {
+    color: var(--color-white);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* 핧 일 */
+
+#todo-list {
+    position: absolute;
+    width: 50%;
+    height: 35%;
+    bottom: 5%;
+    left: 25%;
+    border: 1px solid var(--color-black);
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+#todo-list li {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+#todo-list li span {
+    flex-basis: 500%;
+}
+
+#todo-list li button {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 25%;
+}
+
+
